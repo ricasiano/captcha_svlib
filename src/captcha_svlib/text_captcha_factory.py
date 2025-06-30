@@ -1,5 +1,5 @@
-from twocaptcha.text_captcha import TextCaptcha as TwoCaptchaTextCaptcha
-from anticaptcha.text_captcha import TextCaptcha as AnticaptchaTextCaptcha
+from captcha_svlib.twocaptcha.text_captcha import TextCaptcha as TwoCaptchaTextCaptcha
+from captcha_svlib.anticaptcha.text_captcha import TextCaptcha as AnticaptchaTextCaptcha
 from text_captcha import TextCaptcha
 
 

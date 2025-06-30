@@ -1,5 +1,5 @@
 from anticaptchaofficial import imagecaptcha
-from ..text_captcha import TextCaptcha as ITextCaptcha
+from captcha_svlib.text_captcha import TextCaptcha as ITextCaptcha
 import base64
 import tempfile
 

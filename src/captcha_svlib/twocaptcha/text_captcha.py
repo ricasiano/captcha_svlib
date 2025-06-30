@@ -1,5 +1,5 @@
 from twocaptcha import TwoCaptcha
-from ..text_captcha import TextCaptcha as ITextCaptcha
+from captcha_svlib.text_captcha import TextCaptcha as ITextCaptcha
 
 
 class TextCaptcha(ITextCaptcha):

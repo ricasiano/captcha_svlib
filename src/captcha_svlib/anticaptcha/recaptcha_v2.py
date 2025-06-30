@@ -1,5 +1,5 @@
 from anticaptchaofficial import recaptchav2proxyless
-from ..recaptcha_v2 import RecaptchaV2 as IRecaptchaV2
+from captcha_svlib.recaptcha_v2 import RecaptchaV2 as IRecaptchaV2
 
 
 class RecaptchaV2(IRecaptchaV2):

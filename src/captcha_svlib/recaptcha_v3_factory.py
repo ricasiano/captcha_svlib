@@ -1,6 +1,6 @@
-from anticaptcha.recaptcha_v3 import RecaptchaV3 as TwoCaptchaRecaptchaV3
-from twocaptcha.recaptcha_v3 import RecaptchaV3 as AnticaptchaRecaptchaV3
-from recaptcha_v3 import RecaptchaV3
+from captcha_svlib.anticaptcha.recaptcha_v3 import RecaptchaV3 as TwoCaptchaRecaptchaV3
+from captcha_svlib.twocaptcha.recaptcha_v3 import RecaptchaV3 as AnticaptchaRecaptchaV3
+from captcha_svlib.recaptcha_v3 import RecaptchaV3
 
 
 class RecaptchaV3Factory:

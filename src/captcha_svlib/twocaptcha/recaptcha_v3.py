@@ -1,5 +1,5 @@
 from twocaptcha import TwoCaptcha
-from ..recaptcha_v3 import RecaptchaV3 as IRecaptchaV3
+from captcha_svlib.recaptcha_v3 import RecaptchaV3 as IRecaptchaV3
 
 
 class RecaptchaV3(IRecaptchaV3):
