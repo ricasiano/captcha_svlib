@@ -1,0 +1,19 @@
+from anticaptcha.recaptcha_v2 import RecaptchaV2 as TwoCaptchaRecaptchaV2
+from twocaptcha.recaptcha_v2 import RecaptchaV2 as AnticaptchaRecaptchaV2
+
+from recaptcha_v2 import RecaptchaV2
+
+
+class RecaptchaV2Factory:
+
+    @staticmethod
+    def build(captcha_solver: str, logger) -> RecaptchaV2:
+        match captcha_solver:
+            case 'twocaptcha':
+                return TwoCaptchaRecaptchaV2(logger)
+
+            case 'anticaptcha':
+                return AnticaptchaRecaptchaV2(logger)
+
+            case _:
+                raise Exception("Solver not found")
