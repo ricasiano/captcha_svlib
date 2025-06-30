@@ -6,13 +6,13 @@ from captcha_svlib.text_captcha import TextCaptcha
 class TextCaptchaFactory:
 
     @staticmethod
-    def build(captcha_solver, logger) -> TextCaptcha:
+    def build(captcha_solver, logger, settings) -> TextCaptcha:
         match captcha_solver:
             case 'twocaptcha':
-                return TwoCaptchaTextCaptcha(logger)
+                return TwoCaptchaTextCaptcha(logger, settings)
 
             case 'anticaptcha':
-                return AnticaptchaTextCaptcha(logger)
+                return AnticaptchaTextCaptcha(logger, settings)
 
             case _:
                 raise Exception("Solver not found")

@@ -6,13 +6,13 @@ from captcha_svlib.recaptcha_v3 import RecaptchaV3
 class RecaptchaV3Factory:
 
     @staticmethod
-    def build(captcha_solver, logger) -> RecaptchaV3:
+    def build(captcha_solver, logger, settings) -> RecaptchaV3:
         match captcha_solver:
             case 'twocaptcha':
-                return TwoCaptchaRecaptchaV3(logger)
+                return TwoCaptchaRecaptchaV3(logger, settings)
 
             case 'anticaptcha':
-                return AnticaptchaRecaptchaV3(logger)
+                return AnticaptchaRecaptchaV3(logger, settings)
 
             case _:
                 raise Exception("Solver not found")
