@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from abstract_captcha import AbstractCaptcha
+from captcha_svlib.abstract_captcha import AbstractCaptcha
 
 
 class RecaptchaV2(ABC, AbstractCaptcha):
