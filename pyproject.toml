@@ -16,11 +16,11 @@ classifiers = [
 ]
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
-
-[project.urls]
-Homepage = "https://github.com/rai-streamline/captcha_svlib"
-Issues = "https://github.com/rai-streamline/captcha_svlib/issues"
 dependencies = [
     "2captcha-python>=1.5.1",
     "anticaptchaofficial>=1.0.64",
 ]
+
+[project.urls]
+Homepage = "https://github.com/rai-streamline/captcha_svlib"
+Issues = "https://github.com/rai-streamline/captcha_svlib/issues"
