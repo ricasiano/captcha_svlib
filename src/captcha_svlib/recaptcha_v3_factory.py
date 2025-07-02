@@ -1,5 +1,5 @@
-from captcha_svlib.anticaptcha.recaptcha_v3 import RecaptchaV3 as TwoCaptchaRecaptchaV3
-from captcha_svlib.twocaptcha.recaptcha_v3 import RecaptchaV3 as AnticaptchaRecaptchaV3
+from captcha_svlib.anticaptcha.recaptcha_v3 import RecaptchaV3 as AnticaptchaRecaptchaV3
+from captcha_svlib.twocaptcha.recaptcha_v3 import RecaptchaV3 as TwoCaptchaRecaptchaV3
 from captcha_svlib.capsolver.recaptcha_v3 import RecaptchaV3 as CapsolverRecaptchaV3
 from captcha_svlib.recaptcha_v3 import RecaptchaV3
 
