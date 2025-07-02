@@ -31,6 +31,21 @@ py = ">=1.4.32"
 requests = ">=2.22.0"
 
 [[package]]
+name = "capsolver"
+version = "1.0.7"
+description = "capsolver python libary"
+optional = false
+python-versions = ">=3.6.8"
+groups = ["main"]
+files = [
+    {file = "capsolver-1.0.7-py3-none-any.whl", hash = "sha256:c0497cc55398741a00c84c34bbad5698a7e76b73787b568622a6ec4d319c5773"},
+    {file = "capsolver-1.0.7.tar.gz", hash = "sha256:e3ec645c8752becb2c861d357bbc0cc23c5716bd9073e1b9b1cc5ecc5ba1d21f"},
+]
+
+[package.dependencies]
+requests = ">=2.26.0"
+
+[[package]]
 name = "certifi"
 version = "2025.6.15"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -214,4 +229,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.9"
-content-hash = "f6d5e722eda1f04f0636c52c4d41718b08381eb17b7cfbb722e445e790675913"
+content-hash = "ce026f58cd215c26f85385c6ac707d9b1572e34fded61298bc8823c0b5dd625e"

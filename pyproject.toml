@@ -19,6 +19,7 @@ license-files = ["LICEN[CS]E*"]
 dependencies = [
     "2captcha-python>=1.5.1",
     "anticaptchaofficial>=1.0.64",
+    "capsolver>=1.0.7",
 ]
 
 [project.urls]
