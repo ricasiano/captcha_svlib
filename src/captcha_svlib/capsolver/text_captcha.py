@@ -13,7 +13,6 @@ class TextCaptcha(ITextCaptcha):
                 "body": image,
             }
             solution = capsolver.solve(kwargs)
-            self.logger.debug(solution)
             result["error"] = 0
             result["text"] = solution.get("text")
         except Exception as ex:
