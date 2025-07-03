@@ -13,7 +13,6 @@ class RecaptchaV2(IRecaptchaV2):
                 url=url,
                 invisible=1 if invisible else 0
             )
-            self.logger.debug(solution)
             result["error"] = 0
             result["text"] = solution.get("code")
             self.logger.info(f"Successfully solved recaptchaV2 with captchaId: {solution.get('captchaId')}")

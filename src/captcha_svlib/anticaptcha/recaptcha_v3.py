@@ -10,7 +10,7 @@ class RecaptchaV3(IRecaptchaV3):
               score: float = 0.4,
               action: str = "home_page",
               enterprise: bool = False) -> dict:
-        self.logger.info("Solving Recaptcha using Anti Captcha v3")
+        self.logger.info("Solving recaptchaV3 using Anticaptcha")
 
         if enterprise:
             solver_class = recaptchav3enterpriseproxyless.recaptchaV3EnterpriseProxyless

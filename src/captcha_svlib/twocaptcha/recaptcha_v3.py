@@ -23,7 +23,6 @@ class RecaptchaV3(IRecaptchaV3):
                 action=action,
                 score=score
             )
-            self.logger.debug(solution)
             result["error"] = 0
             result["text"] = solution.get("code")
             self.logger.info(f"Successfully solved recaptchaV3 with captchaId: {solution.get('captchaId')}")

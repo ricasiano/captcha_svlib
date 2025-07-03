@@ -10,7 +10,6 @@ class TextCaptcha(ITextCaptcha):
             self.logger.info("Solving text captcha using 2CaptchaSolver")
             solver = TwoCaptcha(self.settings.CAPTCHA_2C_KEY)
             solution = solver.normal(image, caseSensitive=1)
-            self.logger.debug(solution)
             result["error"] = 0
             result["text"] = solution.get("code")
             self.logger.info(f"Successfully solved text captcha with captchaId: {solution.get('captchaId')}")

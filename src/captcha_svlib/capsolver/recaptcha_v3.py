@@ -21,7 +21,6 @@ class RecaptchaV3(IRecaptchaV3):
             if action:
                 kwargs["action"] = action
             solution = capsolver.solve(kwargs)
-            self.logger.debug(solution)
             result["error"] = 0
             result["text"] = solution.get("gRecaptchaResponse")
         except Exception as ex:
