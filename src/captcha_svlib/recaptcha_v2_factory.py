@@ -19,4 +19,4 @@ class RecaptchaV2Factory:
                 return CapsolverRecaptchaV2(logger, settings)
 
             case _:
-                raise Exception("Solver not found")
+                return TwoCaptchaRecaptchaV2(logger, settings)

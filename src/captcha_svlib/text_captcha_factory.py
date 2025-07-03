@@ -19,4 +19,4 @@ class TextCaptchaFactory:
                 return CapsolverTextCaptcha(logger, settings)
 
             case _:
-                raise Exception("Solver not found")
+                return TwoCaptchaTextCaptcha(logger, settings)

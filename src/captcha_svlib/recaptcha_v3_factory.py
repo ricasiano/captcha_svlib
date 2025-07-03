@@ -19,4 +19,4 @@ class RecaptchaV3Factory:
                 return CapsolverRecaptchaV3(logger, settings)
 
             case _:
-                raise Exception("Solver not found")
+                return TwoCaptchaRecaptchaV3(logger, settings)
