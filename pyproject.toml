@@ -23,5 +23,5 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/rai-streamline/captcha_svlib"
-Issues = "https://github.com/rai-streamline/captcha_svlib/issues"
+Homepage = "https://github.com/ricasiano/captcha_svlib"
+Issues = "https://github.com/ricasiano/captcha_svlib/issues"
