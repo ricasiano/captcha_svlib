@@ -7,16 +7,16 @@ from captcha_svlib.text_captcha import TextCaptcha
 class TextCaptchaFactory:
 
     @staticmethod
-    def build(captcha_solver, logger, settings) -> TextCaptcha:
+    def build(captcha_solver, settings) -> TextCaptcha:
         match captcha_solver:
             case 'twocaptcha':
-                return TwoCaptchaTextCaptcha(logger, settings)
+                return TwoCaptchaTextCaptcha(settings)
 
             case 'anticaptcha':
-                return AnticaptchaTextCaptcha(logger, settings)
+                return AnticaptchaTextCaptcha(settings)
 
             case 'capsolver':
-                return CapsolverTextCaptcha(logger, settings)
+                return CapsolverTextCaptcha(settings)
 
             case _:
-                return TwoCaptchaTextCaptcha(logger, settings)
+                return TwoCaptchaTextCaptcha(settings)

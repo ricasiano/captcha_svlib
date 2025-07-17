@@ -7,16 +7,16 @@ from captcha_svlib.recaptcha_v2 import RecaptchaV2
 class RecaptchaV2Factory:
 
     @staticmethod
-    def build(captcha_solver: str, logger, settings) -> RecaptchaV2:
+    def build(captcha_solver: str, settings) -> RecaptchaV2:
         match captcha_solver:
             case 'twocaptcha':
-                return TwoCaptchaRecaptchaV2(logger, settings)
+                return TwoCaptchaRecaptchaV2(settings)
 
             case 'anticaptcha':
-                return AnticaptchaRecaptchaV2(logger, settings)
+                return AnticaptchaRecaptchaV2(settings)
 
             case 'capsolver':
-                return CapsolverRecaptchaV2(logger, settings)
+                return CapsolverRecaptchaV2(settings)
 
             case _:
-                return TwoCaptchaRecaptchaV2(logger, settings)
+                return TwoCaptchaRecaptchaV2(settings)
