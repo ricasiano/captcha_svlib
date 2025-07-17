@@ -7,7 +7,6 @@ import tempfile
 
 class TextCaptcha(ITextCaptcha):
     def solve(self, image: str) -> dict:
-        self.logger.info("Solving text captcha using Anticaptcha")
         solver = imagecaptcha.imagecaptcha()
         solver.set_verbose(0)
         solver.set_key(self.settings.CAPTCHA_AC_KEY)
