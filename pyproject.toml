@@ -3,7 +3,7 @@ requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 [project]
 name = "captcha_svlib"
-version = "v0.0.4"
+version = "v0.0.5"
 authors = [
   { name="Rai Icasiano", email="ricasiano@gmail.com" },
 ]

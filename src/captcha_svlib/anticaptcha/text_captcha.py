@@ -1,12 +1,12 @@
 from anticaptchaofficial import imagecaptcha
 from captcha_svlib.text_captcha import TextCaptcha as ITextCaptcha
+from captcha_svlib.captcha_exception import CaptchaException
 import base64
 import tempfile
 
 
 class TextCaptcha(ITextCaptcha):
     def solve(self, image: str) -> dict:
-        self.logger.info("Solving text captcha using Anticaptcha")
         solver = imagecaptcha.imagecaptcha()
         solver.set_verbose(0)
         solver.set_key(self.settings.CAPTCHA_AC_KEY)
@@ -23,5 +23,5 @@ class TextCaptcha(ITextCaptcha):
                     return {"error": False, "text": solution}
                 else:
                     return {"error": True, "text": "", "message": solver.error_code}
-        except Exception as ex:
-            return {"error": True, "text": "", "message": str(ex)}
+        except CaptchaException as ex:
+            raise CaptchaException("Failed to solve text captcha using Anticaptcha", ex)
