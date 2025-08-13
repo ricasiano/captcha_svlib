@@ -1,6 +1,7 @@
 from captcha_svlib.twocaptcha.text_captcha import TextCaptcha as TwoCaptchaTextCaptcha
 from captcha_svlib.anticaptcha.text_captcha import TextCaptcha as AnticaptchaTextCaptcha
 from captcha_svlib.capsolver.text_captcha import TextCaptcha as CapsolverTextCaptcha
+from captcha_svlib.endcaptcha.text_captcha import TextCaptcha as EndcaptchaTextCaptcha
 from captcha_svlib.text_captcha import TextCaptcha
 
 
@@ -17,6 +18,9 @@ class TextCaptchaFactory:
 
             case 'capsolver':
                 return CapsolverTextCaptcha(settings)
+
+            case 'endcaptcha':
+                return EndcaptchaTextCaptcha(settings)
 
             case _:
                 return TwoCaptchaTextCaptcha(settings)
