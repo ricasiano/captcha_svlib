@@ -1,4 +1,4 @@
-from endcaptcha import HttpClient
+from .endcaptcha import HttpClient
 from captcha_svlib.recaptcha_v3 import RecaptchaV3 as IRecaptchaV3
 from captcha_svlib.captcha_exception import CaptchaException
 import json

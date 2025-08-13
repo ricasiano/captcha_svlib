@@ -1,4 +1,4 @@
-from endcaptcha import HttpClient
+from .endcaptcha import HttpClient
 from captcha_svlib.text_captcha import TextCaptcha as ITextCaptcha
 from captcha_svlib.captcha_exception import CaptchaException
 import base64
