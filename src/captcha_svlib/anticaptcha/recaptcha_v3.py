@@ -18,8 +18,7 @@ class RecaptchaV3(IRecaptchaV3):
             else:
                 solver_class = recaptchav3proxyless.recaptchaV3Proxyless
 
-            solver_class()
-            solver = recaptchav3proxyless.recaptchaV3Proxyless()
+            solver = solver_class()
             solver.set_verbose(0)
             solver.set_soft_id(0)
             solver.set_key(self.settings.CAPTCHA_AC_KEY)
